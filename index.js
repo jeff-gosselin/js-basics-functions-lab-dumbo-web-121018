@@ -16,6 +16,12 @@ function distanceFromHqInFeet(street) {
   return blocks * 264;
 }
 
-function distanceTravelledInFeet() {
-
+function distanceTravelledInFeet(block1, block2) {
+  let blocks;
+  if (block1 > block2) {
+    blocks = block1 - block2;
+  } else {
+    blocks = block2 - block1;
+  }
+  return blocks * 264;
 }
