@@ -36,7 +36,7 @@ function calculatesFarePrice(start, destination) {
     case (feet > 400 && feet < 2000):
       fare = (feet - 400) * .02;
       break;
-    case feet > 2000:
+    case feet > 2000 && feet < 2500:
       fare = 25;
       break;
     case feet > 2500:
