@@ -10,7 +10,8 @@ function distanceFromHqInBlocks(street) {
   return distance;
 }
 
-function distanceFromHqInFeet(distanceFromHqInBlocks) {
-  let blocks = distanceFromHqInBlocks();
+
+function distanceFromHqInFeet(street) {
+  let blocks = distanceFromHqInBlocks(street);
   return blocks * 264;
 }
