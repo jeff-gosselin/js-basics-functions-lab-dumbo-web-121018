@@ -25,3 +25,7 @@ function distanceTravelledInFeet(block1, block2) {
   }
   return blocks * 264;
 }
+
+function calculatesFarePrice(start, destination) {
+  let feet = distanceTravelledInFeet(start, destination);
+}
